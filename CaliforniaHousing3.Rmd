@@ -1,7 +1,9 @@
 ---
 title: "PSTAT 126 - Project Step 3"
 author: "Sara Chong"
-output: github_document
+output: 
+  html_document:
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}

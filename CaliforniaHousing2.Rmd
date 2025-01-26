@@ -2,10 +2,8 @@
 title: "Project Step 2"
 author: Sara Chong
 output:
-  github_document: 
-    latex_engine: xelatex
   html_document:
-    df_print: paged
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}

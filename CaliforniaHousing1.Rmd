@@ -2,10 +2,8 @@
 title: "PSTAT 126 - Project Step 1"
 author: Sara Chong
 output:
-  github_document: 
-    latex_engine: xelatex
   html_document:
-    df_print: paged
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
