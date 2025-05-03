@@ -1,7 +1,9 @@
 Car Sales Time Series Analysis
 ================
 
-## Abstract
+</b>
+
+### Abstract
 
 This project focuses on the analysis and forecasting of car sales in
 Quebec from 1960 to 1968, utilizing the data available in the Time
@@ -18,7 +20,9 @@ industry. The predicted values fell within the stated confidence
 intervals, demonstrating that the model is reliable in estimating the
 data and trends.
 
-## Analysis
+</b>
+
+### Analysis
 
 To begin the analysis, I created a time series plot of the raw,
 untransformed data to find any visually underlying patterns. The plot
@@ -57,7 +61,9 @@ series is stationary and suitable for time series modeling.
 
 <img src="CarSales_files/figure-gfm/unnamed-chunk-4-1.png" width="50%" /><img src="CarSales_files/figure-gfm/unnamed-chunk-4-2.png" width="50%" />
 
-## Box-Cox Transformation
+</b>
+
+### Box-Cox Transformation
 
 The Box-Cox transformation method allows us to stabilize the variability
 in the time series. The graph below reveals the optimal lambda value is
@@ -82,7 +88,9 @@ time series modeling.
 
 <img src="CarSales_files/figure-gfm/unnamed-chunk-7-1.png" width="49%" /><img src="CarSales_files/figure-gfm/unnamed-chunk-7-2.png" width="49%" />
 
-## Differencing
+</b>
+
+### Differencing
 
 The next step is to remove seasonality and trend by differencing the
 data. To achieve this, I compared differencing at lag 1 and lag 12. The
@@ -99,7 +107,9 @@ seasonality and trend, making it the best choice for further analysis.
 
     ## Variance of Difference at Lag 12: 0.01759893
 
-## Model Fitting
+</b>
+
+### Model Fitting
 
 Now that the data now de-trended, de-seasonalized, and its variance
 stabilized, we can proceed with building a SARIMA model. Since we
@@ -202,7 +212,9 @@ ready for forecasting.
 
 <img src="CarSales_files/figure-gfm/unnamed-chunk-13-1.png" width="50%" /><img src="CarSales_files/figure-gfm/unnamed-chunk-13-2.png" width="50%" />
 
-## Diagnostic Check
+</b>
+
+### Diagnostic Check
 
 Now that it is known that the model is both stationary and invertible,
 we can continue with diagnostic checking for Model 1. The Q-Q plot,
@@ -250,7 +262,9 @@ non-normality present.
 | Ljung-Box        | 0.1517   |
 | McLeod Li        | 0.6634   |
 
-## Forecasting
+</b>
+
+### Forecasting
 
 Now that the best model has been determined, I can display the forecasts
 based on the transformed data. The red dots representing the forecasted
@@ -281,7 +295,9 @@ well-suited for forecasting future car sales in Quebec.
 
 <img src="CarSales_files/figure-gfm/unnamed-chunk-17-1.png" width="50%" /><img src="CarSales_files/figure-gfm/unnamed-chunk-17-2.png" width="50%" />
 
-## Conclusion
+</b>
+
+### Conclusion
 
 The goal of this project was to predict future car sales in Quebec by
 creating a model of the monthly data. This was achieved through the
@@ -294,7 +310,9 @@ would like to acknowledge Professor Feldman, TAs Cosmin and Lihao, and
 classmates Michael Chen, Brian Ho, and James Son for helping me through
 this process.
 
-## References
+</b>
+
+### References
 
 Abraham, B., and J. Ledolter. “Statistical Methods for Forecasting.”
 John Wiley & Sons, 1983.  
@@ -303,7 +321,9 @@ Hyndman, Rob. “TSDL Library.” TSDL,
 Kelkar, Mihir, et al. “Time-Series Statistical Model for Forecasting
 Revenue and Risk Management.”  
 
-## Appendix
+</b>
+
+### Appendix
 
 ``` r
 library(forecast)
